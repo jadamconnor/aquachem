@@ -129,7 +129,7 @@
     "contact": {
       "OFFICE": "<p>2631 N. Meade Street Ste 104</p><p>Appleton, WI 54911<p>",
       "PHONE": "920.687.5238",
-      "EMAIL": "customerservice@aquachemww.com"
+      "EMAIL": "<a href='mailto:customerservice@aquachemww.com'>customerservice@aquachemww.com</a>"
     },
     "downloadLink": "SDS Download",
     "copyRight": "<span>© </span> {{year}} Aquachem. All Rights Reserved."

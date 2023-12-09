@@ -505,7 +505,10 @@ function App() {
                   </h4>
                   <p className="text-white text-lg text-[13px]">
                     <Trans
-                      components={{ p: <p className="leading-normal"></p> }}
+                      components={{
+                        p: <p className="leading-normal"></p>,
+                        a: <a></a>,
+                      }}
                     >
                       {item[1]}
                     </Trans>
