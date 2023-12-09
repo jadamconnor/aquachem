@@ -526,7 +526,7 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="w-full xl:text-right text-white text-[13px]">
+          <div className="w-full xl:w-1/2 xl:text-right text-white text-[13px]">
             <Trans
               components={{ span: <span className="text-aqua-blue"></span> }}
             >
