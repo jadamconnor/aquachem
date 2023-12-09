@@ -1,0 +1,8 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.thin-underline {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
