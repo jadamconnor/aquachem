@@ -556,6 +556,7 @@ const VideoBackground = ({ children }) => {
         loop
         muted
         playsInline
+        controls={false}
         style={{
           position: 'absolute',
           top: 0,
