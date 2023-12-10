@@ -17,6 +17,7 @@ function App() {
   const [enableSubmitButton, setEnableSubmitButton] = useState(false);
   const [hoveredComponent, setHoveredComponent] = useState(null);
   const [mobileNav, setMobileNav] = useState(false);
+  console.log(window.innerHeight);
 
   const toggleMobileNav = () => {
     setMobileNav(!mobileNav);
