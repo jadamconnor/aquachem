@@ -97,7 +97,7 @@
         "<ul><li>Static Mixers</li><li>Filters</li><li>Drawdown cylinders / calibration</li></ul>"
       ],
       "Chemical Storage Tanks": [],
-      "Chemical Feee Pumps": [
+      "Chemical Feed Pumps": [
         "Peristaltic",
         "Diaphragm",
         "Progressive Cavity",
@@ -127,7 +127,7 @@
   "contactCallout": "For General Inquiries, Questions or Concerns, Please contact us at <b>920.687.5238</b>.",
   "footer": {
     "contact": {
-      "OFFICE": "<p>2631 N. Meade Street Ste 104</p><p>Appleton, WI 54911<p>",
+      "OFFICE": "<p>PO BOX 129</p><p>Little Chute, WI 54140<p>",
       "PHONE": "920.687.5238",
       "EMAIL": "<a href='mailto:customerservice@aquachemww.com'>customerservice@aquachemww.com</a>"
     },
