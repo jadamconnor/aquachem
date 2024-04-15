@@ -1,0 +1,98 @@
+[
+  {
+    "title": "CATEGORY TITLE 1",
+    "files": [
+      {
+        "fileName": "AQUACHEM EM 1175.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1240.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1360.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1376.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1385.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1475.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1485.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1575.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1795.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1835.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1865.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1875.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 1885.pdf"
+      }
+    ]
+  },
+  {
+    "title": "CATEGORY TITLE 2",
+    "files": [
+      {
+        "fileName": "AQUACHEM EM 2585.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 3070.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 3085.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 3160.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 3170.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 3185.pdf"
+      },
+      {
+        "fileName": "AQUACHEM EM 3245.pdf"
+      }
+    ]
+  },
+  {
+    "title": "CATEGORY TITLE 3",
+    "files": [
+      {
+        "fileName": "Aluminium Sulphate.pdf"
+      },
+      {
+        "fileName": "Caustic Soda.pdf"
+      },
+      {
+        "fileName": "Citric Acid50%.pdf"
+      },
+      {
+        "fileName": "Ferric Chloride 38-40%.pdf"
+      },
+      {
+        "fileName": "Ferric Chloride 38-40%.pdf"
+      },
+      {
+        "fileName": "Ferric Sulfate 60%.pdf"
+      },
+      {
+        "fileName": "Sodium Bicarbonate.pdf"
+      }
+    ]
+  }
+]
