@@ -13,7 +13,7 @@ function SHSDSDownloads() {
       <div className="grid grid-cols-2 gap-10 xl:container my-16">
         {downloads.map((category) => (
           <div key={category.title}>
-            <h2 className="text-aqua-blue mb-5 underline underline-offset-[12px]">
+            <h2 className="text-aqua-blue mb-5 underline underline-offset-[12px">
               {category.title}
             </h2>
             {category.files.map((document, index) => (

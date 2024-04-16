@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
 const Layout = ({ children }) => {
   const { t } = useTranslation();
+
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   const [hoveredComponent, setHoveredComponent] = useState(null);
   const [mobileNav, setMobileNav] = useState(false);
@@ -27,10 +31,12 @@ const Layout = ({ children }) => {
         >
           <div className="flex-1 justify-start">
             <div className="xl:w-72">
-              <img src="AquachemLogoWhite.png" />
+              <a href="/">
+                <img src="AquachemLogoWhite.png" />
+              </a>
             </div>
           </div>
-          <nav className="flex-1 flex justify-end">
+          <nav className={`${!isHomePage && 'hidden'} flex-1 flex justify-end`}>
             <ul className="hidden w-full xl:flex xl:justify-between xl:text-lg 2xl:text-2xl text-white font-bold">
               <li
                 className="h-[40px]"
