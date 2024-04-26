@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import PropTypes from 'prop-types';
-import ReCAPTCHA from 'react-google-recaptcha';
 import { useForm, ValidationError } from '@formspree/react';
 import Layout from '../components/Layout';
 
@@ -15,7 +14,6 @@ function Index() {
   const [phone, setPhone] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
-  const [enableSubmitButton, setEnableSubmitButton] = useState(false);
   const [state, handleSubmit] = useForm(import.meta.env.VITE_PUBLIC_FORM);
 
   const solutionsList = t('solutions.list', { returnObjects: true });
@@ -375,25 +373,14 @@ function Index() {
                   errors={state.errors}
                 />
                 <div className="xl:flex col-span-2">
-                  <div className="flex-1 mb-3 xl:mb-0">
-                    <ReCAPTCHA
-                      sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-                      onChange={() => setEnableSubmitButton(true)}
-                    />
-                  </div>
                   <div className="flex-1 flex flex-wrap items-center justify-center">
                     <button
-                      disabled={!enableSubmitButton || state.submitting}
+                      disabled={state.submitting}
                       className="text-white w-full text-lg font-bold"
                       type="submit"
                     >
                       SEND
                     </button>
-                    {!enableSubmitButton && (
-                      <p className="text-white text-sm">
-                        Please complete the reCAPTCHA
-                      </p>
-                    )}
                   </div>
                 </div>
               </div>
