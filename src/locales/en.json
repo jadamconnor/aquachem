@@ -15,7 +15,7 @@
   },
   "about": {
     "heading": "ABOUT US",
-    "paragraph": "We provide the highest level of service and superior customer support while selling quality products at a great value. Our cost-effective solutions, experience, and superior focus on our customers’ needs allow us to build long-term, mutual benefiting relationships with our customers."
+    "paragraph": "We provide the highest level of service and superior customer support while selling quality products at a great value. Our cost-effective solutions, experience, and superior focus on our customers' needs allow us to build long-term, mutual benefiting relationships with our customers."
   },
   "solutions": {
     "heading": "Whether it's Chemical Supply or Full Programming our Solutions Scale to Support Various Industries",
@@ -132,7 +132,10 @@
       "PHONE": "920.687.5238",
       "EMAIL": "<a href='mailto:customerservice@aquachemww.com'>customerservice@aquachemww.com</a>"
     },
-    "downloadLink": "SDS Download",
+    "downloadLink": {
+      "text": "SDS Download",
+      "url": "/sds-downloads"
+    },
     "copyRight": "<span>© </span> {{year}} Aquachem. All Rights Reserved."
   }
 }

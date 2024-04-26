@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
           } flex justify-between font-sans-system container h-full items-center px-5 xl:px-0`}
         >
           <div className="flex-1 justify-start">
-            <div className="xl:w-72">
+            <div className="max-w-[250px] xl:w-72">
               <a href="/">
                 <img src="AquachemLogoWhite.png" />
               </a>
@@ -167,9 +167,9 @@ const Layout = ({ children }) => {
             <div className="xl:w-1/2 xl:text-right mb-5 xl:mb-0">
               <a
                 className="text-white text-[13px] flex items-center xl:justify-center"
-                href="#"
+                href={t('footer.downloadLink.url')}
               >
-                {t('footer.downloadLink')}
+                {t('footer.downloadLink.text')}
                 <MdKeyboardArrowDown className="text-2xl text-aqua-blue" />
               </a>
             </div>

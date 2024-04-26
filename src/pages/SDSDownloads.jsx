@@ -10,9 +10,9 @@ function SHSDSDownloads() {
           <p>Download the SDS Infosheet by clicking the document below.</p>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-10 xl:container my-16">
+      <div className="lg:grid grid-cols-2 2xl:grid-cols-3 gap-10 xl:container m-5 mb-16">
         {downloads.map((category) => (
-          <div key={category.title}>
+          <div className="mt-16" key={category.title}>
             <h2 className="text-aqua-blue mb-5 underline underline-offset-[12px">
               {category.title}
             </h2>

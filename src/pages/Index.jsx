@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
-import ReCAPTCHA from 'react-google-recaptcha';
 import PropTypes from 'prop-types';
+import ReCAPTCHA from 'react-google-recaptcha';
+import { useForm, ValidationError } from '@formspree/react';
 import Layout from '../components/Layout';
 
 function Index() {
   const { t } = useTranslation();
+
+  console.log(import.meta.env);
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -13,19 +16,7 @@ function Index() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [enableSubmitButton, setEnableSubmitButton] = useState(false);
-  console.log(window.innerHeight);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const email = 'customerservice@aquachemww.com';
-    const subject = 'Contact Form Submission';
-    const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`;
-    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`;
-    console.log(mailtoUrl);
-  };
+  const [state, handleSubmit] = useForm(import.meta.env.VITE_PUBLIC_FORM);
 
   const solutionsList = t('solutions.list', { returnObjects: true });
 
@@ -313,56 +304,86 @@ function Index() {
                   placeholder="Name"
                   type="text"
                   id="name"
+                  name="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
+                />
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
                 />
                 <input
                   className="bg-aqua-blue-light h-10 pl-2"
                   placeholder="Email"
                   type="email"
                   id="email"
+                  name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
                 <input
                   className="bg-aqua-blue-light h-10 pl-2"
                   placeholder="Phone Number"
                   type="text"
                   id="phone"
+                  name="phone"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   required
+                />
+                <ValidationError
+                  prefix="Phone"
+                  field="phone"
+                  errors={state.errors}
                 />
                 <input
                   className="bg-aqua-blue-light col-span-2 h-10 pl-2"
                   placeholder="Subject"
                   type="text"
                   id="subject"
+                  name="subject"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                   required
+                />
+                <ValidationError
+                  prefix="Subject"
+                  field="subject"
+                  errors={state.errors}
                 />
                 <textarea
                   className="bg-aqua-blue-light col-span-2 min-h-[200px] pl-2"
                   placeholder="Enter message here"
                   type="text"
                   id="message"
+                  name="message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   required
                 />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
                 <div className="xl:flex col-span-2">
                   <div className="flex-1 mb-3 xl:mb-0">
                     <ReCAPTCHA
-                      sitekey="Your client site key"
+                      sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
                       onChange={() => setEnableSubmitButton(true)}
                     />
                   </div>
                   <div className="flex-1 flex flex-wrap items-center justify-center">
                     <button
-                      disabled={!enableSubmitButton}
+                      disabled={!enableSubmitButton || state.submitting}
                       className="text-white w-full text-lg font-bold"
                       type="submit"
                     >
@@ -377,6 +398,9 @@ function Index() {
                 </div>
               </div>
             </form>
+            {state.succeeded && (
+              <p className="text-white text-lg">Message sent successfully</p>
+            )}
           </div>
         </div>
       </div>
