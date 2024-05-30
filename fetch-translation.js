@@ -1,17 +1,11 @@
 import fs from 'fs';
-import https from 'https';
 import { config } from 'dotenv';
 import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 import fetch from 'node-fetch';
-import { json } from 'react-router-dom';
 
 config();
 
-const url = process.env.CONTENT_SERVICE_URL;
-const binID = process.env.CONTENT_SERVICE_BIN_ID;
-const masterKey = process.env.CONTENT_SERVICE_MASTER_KEY;
-const accessKey = process.env.CONTENT_SERVICE_ACCESS_KEY;
 const filePath = './src/locales/en.json';
 
 const s3Client = new S3Client({
