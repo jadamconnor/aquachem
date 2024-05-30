@@ -4,14 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "fetch-translation": "node fetch-translation.js",
+    "dev": "npm run fetch-translation && vite",
+    "build": "npm run fetch-translation && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@fontsource-variable/open-sans": "^5.0.18",
     "@formspree/react": "^2.5.1",
+    "dotenv": "^16.4.5",
     "i18next": "^23.7.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

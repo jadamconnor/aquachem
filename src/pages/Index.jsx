@@ -7,8 +7,6 @@ import Layout from '../components/Layout';
 function Index() {
   const { t } = useTranslation();
 
-  console.log(import.meta.env);
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');

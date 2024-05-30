@@ -7,7 +7,7 @@ i18n
   .init({
     resources: {
       en: {
-        translation: en,
+        translation: en.record,
       },
     },
     lng: 'en', // language to use
