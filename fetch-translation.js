@@ -4,13 +4,11 @@ import { config } from 'dotenv';
 
 config();
 
-const url = process.env.VITE_CONTENT_SERVICE_URL;
-const binID = process.env.VITE_CONTENT_SERVICE_BIN_ID;
-const masterKey = process.env.VITE_CONTENT_SERVICE_MASTER_KEY;
-const accessKey = process.env.VITE_CONTENT_SERVICE_ACCESS_KEY;
+const url = process.env.CONTENT_SERVICE_URL;
+const binID = process.env.CONTENT_SERVICE_BIN_ID;
+const masterKey = process.env.CONTENT_SERVICE_MASTER_KEY;
+const accessKey = process.env.CONTENT_SERVICE_ACCESS_KEY;
 const filePath = './src/locales/en.json';
-
-console.log(url);
 
 https
   .get(
