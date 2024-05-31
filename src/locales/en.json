@@ -152,7 +152,105 @@
         "url": "/sds-downloads"
       },
       "copyRight": "<span>© </span> {{year}} Aquachem. All Rights Reserved."
-    }
+    },
+    "downloads": [
+      {
+        "title": "Emulsion/Liquid Polymers",
+        "files": [
+          {
+            "fileName": "AQUACHEM EM 1175.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1240.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1360.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1376.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1385.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1475.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1485.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1575.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1795.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1835.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1865.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1875.pdf"
+          },
+          {
+            "fileName": "AQUACHEM EM 1885.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Dry/Powder Polymers",
+        "files": [
+          {
+            "fileName": "AQUACHEM DP 2585.pdf"
+          },
+          {
+            "fileName": "AQUACHEM DP 3070.pdf"
+          },
+          {
+            "fileName": "AQUACHEM DP 3085.pdf"
+          },
+          {
+            "fileName": "AQUACHEM DP 3160.pdf"
+          },
+          {
+            "fileName": "AQUACHEM DP 3170.pdf"
+          },
+          {
+            "fileName": "AQUACHEM DP 3185.pdf"
+          },
+          {
+            "fileName": "AQUACHEM DP 3245.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Other Treatments",
+        "files": [
+          {
+            "fileName": "Aluminium Sulphate.pdf"
+          },
+          {
+            "fileName": "Caustic Soda.pdf"
+          },
+          {
+            "fileName": "Citric Acid50%.pdf"
+          },
+          {
+            "fileName": "Ferric Chloride 38-40%.pdf"
+          },
+          {
+            "fileName": "Ferric Chloride 38-40%.pdf"
+          },
+          {
+            "fileName": "Ferric Sulfate 60%.pdf"
+          },
+          {
+            "fileName": "Sodium Bicarbonate.pdf"
+          }
+        ]
+      }
+    ]
   },
   "metadata": {
     "id": "6657aeb0ad19ca34f87148e7",

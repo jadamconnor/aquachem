@@ -1,7 +1,13 @@
 import Layout from '../components/Layout';
-import downloads from '../../public/downloads/downloads.json';
+import { useTranslation } from 'react-i18next';
 
 function SHSDSDownloads() {
+  const { t } = useTranslation();
+
+  const downloads = t('downloads', {
+    returnObjects: true,
+  });
+
   return (
     <Layout>
       <div className="flex flex-wrap items-center justify-center h-[300px] bg-gradient-to-b from-black/70 bg-aqua-blue">
